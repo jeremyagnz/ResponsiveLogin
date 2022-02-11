@@ -13,8 +13,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(47,181,139,1) 14%, rgba(47,149,181,1) 28%, rgba(47,81,181,1) 45%, rgba(47,50,181,1) 60%, rgba(83,47,181,1) 74%, rgba(144,18,227,1) 89%,
-     rgba(150,7,245,1) 96%, rgba(115,0,255,1) 100%);
 }
 
 .form-container{
