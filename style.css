@@ -13,6 +13,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(90deg, rgba(47,181,139,1) 14%, rgba(47,149,181,1) 28%, rgba(47,81,181,1) 45%, rgba(47,50,181,1) 60%, rgba(83,47,181,1) 74%, rgba(144,18,227,1) 89%,
+     rgba(150,7,245,1) 96%, rgba(115,0,255,1) 100%);
 }
 
 .form-container{
@@ -221,16 +223,50 @@ body{
 }
 
 
-@media screen and (max-with:735px) {
+@media screen and (max-width: 735px) {
     .form-container {
-        position: absolute;
+        flex-direction: column;
+        top: 0;
+        overflow: hidden;
+        padding: 30px;
+    }
+    .form-box {
+        box-shadow: none;
+        padding: 0;
+    }
+    .imgBox img {
+        max-width: 45%;
+        min-width: 180px;
+    }
+    .imgBox {
+        z-index: 888;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1rem;
         flex-direction: column;
-        top: 0;
-        overflow:hidden;
-        padding: 30px;
+        background: #fff;
+        box-shadow: none;
+        width: 100%;
+        height: auto;
+        padding: 35px 35px 15px;
+    }
+    .sign-up-form {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .form-container{
+        font-size: 0.9em;
+    }
+    .form-box{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .other-logins a{
+        padding: 9px 25px;
+        margin: 0  3px;
     }
 }
